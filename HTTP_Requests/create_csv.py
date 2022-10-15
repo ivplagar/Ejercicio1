@@ -1,5 +1,6 @@
 import csv
 import time
+
 from HTTP_Requests.api_simpsons import obtenerQuote
 def returnCharacter():
   while True:
@@ -18,4 +19,4 @@ def returnCharacter():
       with open('General/General.csv', 'a') as f:
         w = csv.DictWriter(f, my_dict.keys())
         w.writerow(my_dict)
-    time.sleep(1)
+    time.sleep(30)

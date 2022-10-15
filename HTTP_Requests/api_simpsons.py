@@ -1,5 +1,4 @@
 import requests
-import threading
 
 def obtenerQuote():   
 # URL -> api-endpoint  
