@@ -1,0 +1,2 @@
+from HTTP_Requests.create_csv import returnCharacter
+returnCharacter()
