@@ -8,7 +8,7 @@ def create_directory_simpson(str_name, str_image, dict): #definimos la función 
     # Directory
     directory = str_name #obtenemos mediante la llamada a la función en create_csv.py el nombre del directorio
     # Parent Directory path
-    parent_dir = "Characters/" #definimos que los directorios irán dentro de la carpeta Characters para mejor orden
+    parent_dir = "app/Characters/" #definimos que los directorios irán dentro de la carpeta Characters para mejor orden
     # Path
     path = os.path.join(parent_dir, directory) #definimos la ruta del directorio
     character_exists = os.path.exists(path) #introducimos el directorio en una variable comprobar que existe
@@ -24,4 +24,4 @@ def create_directory_simpson(str_name, str_image, dict): #definimos la función 
         with open(f'{path}/{str_name}.csv', 'a') as f:
             w = csv.DictWriter(f, dict.keys())
             w.writerow(dict)
-            download_image(str_image,f'{path}/', str_name
+            download_image(str_image,f'{path}/', str_name)
