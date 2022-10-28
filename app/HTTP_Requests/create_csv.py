@@ -20,7 +20,7 @@ def returnCharacter():
       contador += 1
       my_dict2 = {'Palabra': word, 'Contador': contador} #se guarda en un diccionario la palabra y el número que ocupa en el recuento
       
-      with open('Count.csv', 'a') as f: #creamos el csv para introducir el diccionario
+      with open('count.csv', 'a') as f: #creamos el csv para introducir el diccionario
         w = csv.DictWriter(f, my_dict2.keys())
         w.writerow(my_dict2) #se escribe 1 a 1 cada palabra con su numero correspondiente
    
